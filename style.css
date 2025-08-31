@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+	padding: 110px 0;
+}
+
+.contents-wrapper{
+	width: calc(100% - 100px);
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+#dropArea {
+  width: min(100%, 800px);
+  height: 20vh;
+  border: 2px dashed #666;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#dropArea.dragover {
+  background-color: #f0f8ff;
+}
+
+#previewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.preview {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.preview img {
+  max-width: 200px;
+  max-height: 200px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls div {
+  margin-bottom: 10px;
+}
+
+.controls #widthInput,
+.controls #heightInput,
+.controls #formatSelect, 
+.controls #qualityInput {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  /* margin-bottom: 10px; */
+}
+
+
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+#selectBtn {
+  background-color: #4CAF50; /* 緑色 */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#selectBtn:hover {
+  background-color: #45a049;
+}
+
+#startBtn {
+  background-color: #2196F3; /* 青色 */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#startBtn:hover {
+  background-color: #1976D2;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  vertical-align: -2px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input[type="checkbox"]:checked:before {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  transform: rotate(50deg);
+  width: 4px;
+  height: 8px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  content: '';
+}
+
+@media screen and (max-width: 767px) {
+  .size-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
