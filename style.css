@@ -108,9 +108,14 @@ input[type="checkbox"] {
   height: 16px;
   border: 1px solid #000;
   vertical-align: -2px;
+  margin-right: 4px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #1976D2;
 }
 
 input[type="checkbox"]:checked:before {
@@ -120,8 +125,8 @@ input[type="checkbox"]:checked:before {
   transform: rotate(50deg);
   width: 4px;
   height: 8px;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
   content: '';
 }
 
